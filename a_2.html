@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUST 쇼핑몰</title>
-    <link rel="stylesheet" href="./css/a_1.css">
+    <link rel="stylesheet" href="./css/a_2.css">
     <script src="./script/jquery-1.12.4.js"></script>
     <script src="./script/common.js"></script>
 </head>
@@ -65,11 +65,11 @@
     <script>
         $('.gnb').hover(
             function(){
-                $('.gnb ul').stop().fadeIn()
+                $('.gnb ul').stop().slideDown()
                 $('.gnb').addClass('active')
             },
             function(){
-                $('.gnb ul').stop().fadeOut()
+                $('.gnb ul').stop().slideUp()
                 $('.gnb').removeClass('active')
             }
         )
@@ -83,12 +83,12 @@
         // },3000)
 
         // 슬라이드
-        setInterval(function(){
-            $('.slide').animate({left:-1200},function(){
-                $('.slide div:first').appendTo('.slide')
-                $('.slide').css('left',0)
-            })
-        },3000)
+        // setInterval(function(){
+        //     $('.slide').animate({left:-1200},function(){
+        //         $('.slide div:first').appendTo('.slide')
+        //         $('.slide').css('left',0)
+        //     })
+        // },3000)
     </script>
 </body>
 </html>
